@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <aside class="sidebar">
+      <button class="close_btn">X</button>
+      <a href="#" class="nav-link">Giới thiệu</a>
+      <a href="#program" class="nav-link">Chương trình học</a>
+      <a href="#schedule" class="nav-link">Lịch học</a>
+      <a href="#discount" class="nav-link">Học phí</a>
+      <a href="#certificate" class="nav-link">Chứng chỉ</a>
+    </aside>
+
     <!-- NAVBAR -->
     <nav class="navbar">
       <img
@@ -20,26 +29,33 @@
       />
 
       <div class="nav-list">
-        <a href="#">Giới thiệu</a>
-        <a href="#program">Chương trình học</a>
-        <a href="#schedule">Lịch học</a>
-        <a href="#discount">Học phí</a>
-        <a href="#certificate">Chứng chỉ</a>
+        <a href="#" class="nav-link">Giới thiệu</a>
+        <a href="#program" class="nav-link">Chương trình học</a>
+        <a href="#schedule" class="nav-link">Lịch học</a>
+        <a href="#discount" class="nav-link">Học phí</a>
+        <a href="#certificate" class="nav-link">Chứng chỉ</a>
       </div>
 
-      <button class="call-btn"><span>Tư vấn ngay </span></button>
+      <div class="group-btn">
+        <button class="call-btn"><span>Tư vấn ngay </span></button>
+        <img
+          src="./assets/mobile_btn.svg"
+          alt="mobile_btn"
+          class="mobile_btn"
+        />
+      </div>
     </nav>
 
     <!-- MAIN CONTENT -->
     <main class="main-content">
-      <section class="intro-wrapper">
+      <section class="intro">
         <div class="intro-text-wrapper">
           <div>
             <p class="course-text">Khóa học</p>
             <p class="training-text">
               Đào tạo giáo viên tiếng anh mầm non chuẩn quốc tế
             </p>
-            <p>
+            <p class="intro-text-desc">
               Trang bị kỹ năng sư phạm chuyên sâu - Nhận chứng chỉ uy tín - Cơ
               hội giảng dạy trong hệ sinh thái giáo dục Happy Faces.
             </p>
@@ -47,7 +63,7 @@
           <button class="call-btn"><span>Tư vấn ngay </span></button>
         </div>
 
-        <div class="intro-img">
+        <div class="intro-img-wrapper">
           <img src="./assets/intro.svg" alt="teacher" class="hero-image" />
           <div class="contact-icons">
             <img src="./assets/gmail.svg" alt="gmail" width="50" />
@@ -75,6 +91,12 @@
             class="teacher teacher4"
           />
         </div>
+
+        <img
+          src="./assets/intro.svg"
+          alt="intro_img"
+          class="mobile-intro-img"
+        />
       </section>
 
       <section class="program" id="program">
@@ -170,6 +192,7 @@
 
       <section class="courses" id="course">
         <p class="section-title">Tổng quan khóa học</p>
+
         <div class="course-goals">
           <div class="goals-col">
             <p class="goals-heading">Mục tiêu khoá học</p>
@@ -335,22 +358,38 @@
         <div class="method-content">
           <div class="method-item">
             <p>Thi cấp chứng chỉ – đánh giá năng lực</p>
-            <img src="./assets/method1.svg" alt="certificate" />
+            <img
+              src="./assets/method1.svg"
+              alt="certificate"
+              class="method-item_image"
+            />
           </div>
 
           <div class="method-item">
             <p>Case study thực tế – Demo lớp học.</p>
-            <img src="./assets/method2.svg" alt="case_study" />
+            <img
+              src="./assets/method2.svg"
+              alt="case_study"
+              class="method-item_image"
+            />
           </div>
 
           <div class="method-item">
             <p>Tương tác trực tiếp với giảng viên giàu kinh nghiệm.</p>
-            <img src="./assets/method3.svg" alt="intereact" />
+            <img
+              src="./assets/method3.svg"
+              alt="intereact"
+              class="method-item_image"
+            />
           </div>
 
           <div class="method-item">
             <p>Hỗ trợ tài liệu học, học liệu số.</p>
-            <img src="./assets/method4.svg" alt="meterial" />
+            <img
+              src="./assets/method4.svg"
+              alt="meterial"
+              class="method-item_image"
+            />
           </div>
         </div>
       </section>
@@ -363,58 +402,58 @@
             <p class="discount-heading">Chỉ còn giá</p>
             <p class="discount-price">6.175.000</p>
             <p class="discount-duration">đăng kí trước ngày 10/02/2025</p>
-            <div>
-              <div class="discount-wrapper">
-                <div class="discount-item">
-                  <p>Giảm</p>
-                  <p class="discount-number">5%</p>
-                  <p>đăng kí trước ngày 10/02/2025</p>
-                  <img
-                    src="./assets/badge.svg"
-                    alt="discount_badge"
-                    class="discount-badge"
-                  />
-                </div>
+            <div class="discount-wrapper">
+              <div class="discount-item">
+                <p>Giảm</p>
+                <p class="discount-number">5%</p>
+                <p>đăng kí trước ngày 10/02/2025</p>
+                <img
+                  src="./assets/badge.svg"
+                  alt="discount_badge"
+                  class="discount-badge"
+                />
+              </div>
 
-                <div class="discount-item">
-                  <p>Giảm</p>
-                  <p class="discount-number">
-                    <span class="per-price">300k/</span
-                    ><sub class="sub">người</sub>
-                  </p>
-                  <p>khi đăng kí nhóm</p>
-                  <p class="discount-group">3 người</p>
-                  <img
-                    src="./assets/badge.svg"
-                    alt="discount_badge"
-                    class="discount-badge"
-                  />
-                </div>
+              <div class="discount-item">
+                <p>Giảm</p>
+                <p class="discount-number">
+                  <span class="per-price">300k/</span
+                  ><sub class="sub">người</sub>
+                </p>
+                <p>khi đăng kí nhóm</p>
+                <p class="discount-group">3 người</p>
+                <img
+                  src="./assets/badge.svg"
+                  alt="discount_badge"
+                  class="discount-badge"
+                />
+              </div>
 
-                <div class="discount-item">
-                  <span>Giảm</span>
-                  <p class="discount-number">500K</p>
-                  <p class="text-note">
-                    (áp dụng cho 20 học viên đăng ký sớm nhất mỗi khóa)
-                  </p>
-                  <img
-                    src="./assets/badge.svg"
-                    alt="discount_badge"
-                    class="discount-badge"
-                  />
-                </div>
+              <div class="discount-item">
+                <span>Giảm</span>
+                <p class="discount-number">500K</p>
+                <p class="text-note">
+                  (áp dụng cho 20 học viên đăng ký sớm nhất mỗi khóa)
+                </p>
+                <img
+                  src="./assets/badge.svg"
+                  alt="discount_badge"
+                  class="discount-badge"
+                />
               </div>
             </div>
           </div>
 
           <form class="form-register">
             <p class="form-heading">Dành riêng cho</p>
-            <p class="form-heading_bold">Học viên tháng 4</p>
+            <p class="form-heading_bold">
+              Học viên tháng <span class="currentMonth"></span>
+            </p>
             <div class="countdown">
-              <p>00</p>
-              <p>11</p>
-              <p>40</p>
-              <p>25</p>
+              <p class="day"></p>
+              <p class="hour"></p>
+              <p class="minute"></p>
+              <p class="second"></p>
             </div>
             <div class="form-container">
               <div class="input-field">
@@ -449,7 +488,7 @@
                 <input type="text" />
               </div>
 
-              <button class="register_btn">Đăng ký</button>
+              <button class="register_btn"><span>Đăng ký</span></button>
             </div>
           </form>
         </div>
@@ -541,28 +580,27 @@
           </div>
         </div>
 
-        <div class="image-wrapper">
-          <div>
-            <img
-              src="./assets/girl_writing.svg"
-              alt="girl_writing"
-              class="feedback-image"
-            />
-          </div>
-          <div>
-            <img
-              src="./assets/group_student.svg"
-              alt="group_student"
-              class="feedback-image"
-            />
-          </div>
-          <div>
-            <img
-              src="./assets/group_student.svg"
-              alt="group_student"
-              class="feedback-image"
-            />
-          </div>
+        <div class="feedback-image-wrapper">
+          <img
+            src="./assets/image1.svg"
+            alt="girl_writing"
+            class="feedback-image img1"
+          />
+          <img
+            src="./assets/image2.svg"
+            alt="group_student"
+            class="feedback-image img2"
+          />
+          <img
+            src="./assets/image3.svg"
+            alt="girl_with_mask"
+            class="feedback-image img3"
+          />
+          <img
+            src="./assets/image4.svg"
+            alt="girl_with_mask"
+            class="feedback-image img4"
+          />
         </div>
 
         <button class="call-btn"><span>Tư vấn ngay </span></button>
@@ -578,21 +616,34 @@
           class="happyfaces-logo"
         />
         <p class="slogan">HỆ THỐNG ĐÀO TẠO GIÁO DỤC MẦM NON TOÀN QUỐC</p>
-        <div class="link">
-          <img src="./assets/Facebook.svg" alt="facebook_logo" />
-          <a href="#">www.facebook.com/abc.xyz</a>
+        <div class="link-wrapper">
+          <div class="link-wrapper_item">
+            <img src="./assets/Facebook.svg" alt="facebook_logo" />
+            <a href="#" class="link">www.facebook.com/abc.xyz</a>
+          </div>
+          <div class="link-wrapper_item">
+            <img src="./assets/YouTube.svg" alt="youtube_logo" />
+            <a href="#" class="link">www.youtube.com/abc.xyz</a>
+          </div>
         </div>
-        <div class="link">
-          <img src="./assets/YouTube.svg" alt="youtube_logo" />
-          <a href="#">www.youtube.com/abc.xyz</a>
+
+        <div class="social-text_mobile">
+          <p class="slogan_mobile">
+            HỆ THỐNG ĐÀO TẠO GIÁO DỤC MẦM NON TOÀN QUỐC
+          </p>
+          <div class="link-wrapper_mobile">
+            <img src="./assets/Facebook.svg" alt="facebook_logo" width="30" />
+            <img src="./assets/YouTube.svg" alt="youtube_logo" width="30" />
+          </div>
         </div>
       </div>
 
       <div class="social-contact">
         <p class="footer-title">Liên hệ</p>
+
         <div class="branch-wrapper">
           <div class="branch-item">
-            <p>Chi Nhánh Hà Nội</p>
+            <p class="branch-item_heading">Chi Nhánh Hà Nội</p>
             <div class="address">
               <img src="./assets/home.svg" alt="home_icon" />
               <p>26 Đường Láng, Thịnh Quang, Đống Đa, Hà Nội</p>
@@ -608,7 +659,7 @@
           </div>
 
           <div class="branch-item">
-            <p>Chi Nhánh TP. Hồ Chí Minh</p>
+            <p class="branch-item_heading">Chi Nhánh TP. Hồ Chí Minh</p>
             <div class="address">
               <img src="./assets/home.svg" alt="home_icon" />
               <p>
