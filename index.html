@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Faces</title>
+    <link rel="icon" href="./assets/logo.svg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -11,22 +12,24 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <!-- SIDEBAR -->
     <aside class="sidebar">
       <button class="close_btn">X</button>
-      <a href="#" class="nav-link">Giới thiệu</a>
-      <a href="#program" class="nav-link">Chương trình học</a>
-      <a href="#schedule" class="nav-link">Lịch học</a>
-      <a href="#discount" class="nav-link">Học phí</a>
-      <a href="#certificate" class="nav-link">Chứng chỉ</a>
+      <a href="#" class="nav-link_mobile">Giới thiệu</a>
+      <a href="#program" class="nav-link_mobile">Chương trình học</a>
+      <a href="#schedule" class="nav-link_mobile">Lịch học</a>
+      <a href="#discount" class="nav-link_mobile">Học phí</a>
+      <a href="#certificate" class="nav-link_mobile">Chứng chỉ</a>
     </aside>
 
     <!-- NAVBAR -->
     <nav class="navbar">
-      <img
-        src="./assets/logo.svg"
-        alt="happy-faces_logo"
-        class="happyfaces-logo"
-      />
+      <a href="#"
+        ><img
+          src="./assets/logo.svg"
+          alt="happy-faces_logo"
+          class="happyfaces-logo"
+      /></a>
 
       <div class="nav-list">
         <a href="#" class="nav-link">Giới thiệu</a>
@@ -37,7 +40,7 @@
       </div>
 
       <div class="group-btn">
-        <button class="call-btn"><span>Tư vấn ngay </span></button>
+        <a href="#form" class="call-btn"><span>Đăng ký ngay </span></a>
         <img
           src="./assets/mobile_btn.svg"
           alt="mobile_btn"
@@ -52,15 +55,15 @@
         <div class="intro-text-wrapper">
           <div>
             <p class="course-text">Khóa học</p>
-            <p class="training-text">
+            <h1 class="training-text">
               Đào tạo giáo viên tiếng anh mầm non chuẩn quốc tế
-            </p>
-            <p class="intro-text-desc">
+            </h1>
+            <h2 class="intro-text-desc">
               Trang bị kỹ năng sư phạm chuyên sâu - Nhận chứng chỉ uy tín - Cơ
               hội giảng dạy trong hệ sinh thái giáo dục Happy Faces.
-            </p>
+            </h2>
           </div>
-          <button class="call-btn"><span>Tư vấn ngay </span></button>
+          <a href="#form" class="call-btn"><span>Đăng ký ngay </span></a>
         </div>
 
         <div class="intro-img-wrapper">
@@ -69,6 +72,9 @@
             <img src="./assets/gmail.svg" alt="gmail" width="50" />
             <img src="./assets/messenger.svg" alt="messenger" width="50" />
             <img src="./assets/phone.svg" alt="phone" width="50" />
+            <div class="scroll-to-top">
+              <img src="./assets/arrow.svg" alt="arrow-up" width="20" />
+            </div>
           </div>
           <img
             src="./assets/teacher1.svg"
@@ -107,85 +113,85 @@
             <div class="program-card_icon">
               <img src="./assets/earth.svg" alt="earth_icon" />
             </div>
-            <p class="program-card_title">Sứ mệnh và tầm nhìn</p>
-            <p class="program-card_desc">
+            <h2 class="program-card_title">Sứ mệnh và tầm nhìn</h2>
+            <h3 class="program-card_desc">
               Tạo nền tảng giáo dục vững chắc, khơi gợi niềm vui học tập tiếng
               Anh cho trẻ từ 3-6 tuổi. Happy Faces định hướng trở thành hệ sinh
               thái giáo dục mầm non toàn diện hàng đầu Việt Nam, kết hợp giữa
               chương trình học chuẩn quốc tế, công nghệ số, và đội ngũ giáo viên
               chất lượng cao.
-            </p>
+            </h3>
           </div>
 
           <div class="program-card">
             <div class="program-card_icon">
               <img src="./assets/saturn.svg" alt="saturn_icon" />
             </div>
-            <p class="program-card_title">Kết nối và phát triển toàn diện</p>
-            <p class="program-card_desc">
+            <h2 class="program-card_title">Kết nối và phát triển toàn diện</h2>
+            <h3 class="program-card_desc">
               Happy Faces không chỉ là một chương trình học – mà là một hệ sinh
               thái giáo dục bền vững. Từ bộ sách, học liệu số, khóa đào tạo giáo
               viên, chương trình ngoại khóa đến các trung tâm nhượng quyền – tất
               cả đều được thiết kế đồng bộ nhằm mang lại trải nghiệm học tập
               toàn diện, tạo ra chuẩn đầu ra rõ ràng và cộng đồng giáo dục gắn
               kết.
-            </p>
+            </h3>
           </div>
 
           <div class="program-card">
             <div class="program-card_icon">
               <img src="./assets/book.svg" alt="book_icon" />
             </div>
-            <p class="program-card_title">Tiếng Anh chuẩn quốc tế</p>
-            <p class="program-card_desc">
+            <h2 class="program-card_title">Tiếng Anh chuẩn quốc tế</h2>
+            <h3 class="program-card_desc">
               Thiết kế chuyên biệt cho từng độ tuổi, phù hợp tâm lý và khả năng
               ngôn ngữ của trẻ. Bộ sách Happy Faces gồm 3 cấp độ (3–4 tuổi, 4–5
               tuổi, 5–6 tuổi), nội dung học theo phương pháp học tích cực và
               tích hợp chuẩn Cambridge/CEFR, được xây dựng bởi chuyên gia giáo
               dục hàng đầu Việt Nam và quốc tế.
-            </p>
+            </h3>
           </div>
 
           <div class="program-card">
             <div class="program-card_icon">
               <img src="./assets/bulb.svg" alt="bulb_icon" />
             </div>
-            <p class="program-card_title">Học liệu số sinh động</p>
-            <p class="program-card_desc">
+            <h2 class="program-card_title">Học liệu số sinh động</h2>
+            <h3 class="program-card_desc">
               Tài nguyên học tập hiện đại với video, flashcard, hoạt động tương
               tác, được cập nhật liên tục. Học liệu số được tích hợp qua nền
               tảng e-learning, giúp giáo viên và phụ huynh dễ dàng dạy – học –
               luyện tập mọi lúc mọi nơi. Trẻ được luyện kỹ năng nghe – nói – kể
               chuyện – hát tiếng Anh theo cách trực quan và hấp dẫn.
-            </p>
+            </h3>
           </div>
 
           <div class="program-card">
             <div class="program-card_icon">
               <img src="./assets/award.svg" alt="award_icon" />
             </div>
-            <p class="program-card_title">Cấp chứng chỉ uy tín</p>
-            <p class="program-card_desc">
+            <h2 class="program-card_title">Cấp chứng chỉ uy tín</h2>
+            <h3 class="program-card_desc">
               Khóa học đào tạo giáo viên toàn năng được liên kết cùng Trường Đại
               học Giáo dục – ĐHQGHN. Chương trình kết hợp lý thuyết và thực hành
               chuyên sâu, giúp học viên làm chủ phương pháp giảng dạy tiếng Anh
               mầm non, được cấp chứng chỉ nghiệp vụ uy tín và cơ hội giảng dạy
               thực tế sau khóa học​
-            </p>
+            </h3>
           </div>
 
           <div class="program-card">
             <div class="program-card_icon">
               <img src="./assets/like.svg" alt="like_icon" />
             </div>
-            <p class="program-card_title">Phát triển nghề nghiệp bền vững</p>
-            <p class="program-card_desc">
+            <h2 class="program-card_title">Phát triển nghề nghiệp bền vững</h2>
+            <h3 class="program-card_desc">
               Tham gia vào hệ sinh thái giáo dục Happy Faces với nhiều vai trò:
               giáo viên, cộng tác viên, trung tâm nhượng quyền Học viên sau khi
               tốt nghiệp không chỉ được giới thiệu việc làm, mà còn có thể trở
               thành đối tác giảng dạy, đại lý phân phối sách/học liệu hoặc phát
               triển trung tâm nhượng quyền thương hiệu cùng IPVISON.
-            </p>
+            </h3>
           </div>
         </div>
       </section>
@@ -195,7 +201,7 @@
 
         <div class="course-goals">
           <div class="goals-col">
-            <p class="goals-heading">Mục tiêu khoá học</p>
+            <h2 class="goals-heading">Mục tiêu khoá học</h2>
             <div class="goals-items-wrapper">
               <div class="goal-item">
                 <img
@@ -203,10 +209,10 @@
                   alt="checkbox"
                   class="checkbox"
                 />
-                <p>
+                <h3 class="goal-item_desc">
                   Trang bị cho học viên kiến thức sư phạm, kỹ năng giảng dạy
                   tiếng Anh mầm non hiện đại.
-                </p>
+                </h3>
               </div>
               <div class="goal-item">
                 <img
@@ -214,10 +220,10 @@
                   alt="checkbox"
                   class="checkbox"
                 />
-                <p>
+                <h3 class="goal-item_desc">
                   Làm chủ phương pháp tổ chức lớp học, thiết kế bài giảng, ứng
                   dụng học liệu số.
-                </p>
+                </h3>
               </div>
               <div class="goal-item">
                 <img
@@ -225,10 +231,10 @@
                   alt="checkbox"
                   class="checkbox"
                 />
-                <p>
+                <h3 class="goal-item_desc">
                   Giúp học viên hiểu rõ tâm lý và đặc điểm ngôn ngữ của trẻ từ
                   2–6 tuổi.
-                </p>
+                </h3>
               </div>
               <div class="goal-item">
                 <img
@@ -236,10 +242,10 @@
                   alt="checkbox"
                   class="checkbox"
                 />
-                <p>
+                <h3 class="goal-item_desc">
                   Hướng đến chuẩn quốc tế (Cambridge/CEFR) trong dạy học tiếng
                   Anh mầm non.
-                </p>
+                </h3>
               </div>
               <div class="goal-item">
                 <img
@@ -247,16 +253,16 @@
                   alt="checkbox"
                   class="checkbox"
                 />
-                <p>
+                <h3 class="goal-item_desc">
                   Cấp chứng chỉ nghiệp vụ giáo viên tiếng Anh mầm non uy tín sau
                   khi hoàn thành khóa học.
-                </p>
+                </h3>
               </div>
             </div>
           </div>
 
           <div class="goals-col">
-            <p class="goals-heading">Mục tiêu khoá học</p>
+            <h2 class="goals-heading">Mục tiêu khoá học</h2>
             <div class="goals-items-wrapper">
               <div class="goal-item">
                 <img
@@ -264,10 +270,10 @@
                   alt="checkbox"
                   class="checkbox"
                 />
-                <p>
+                <h3 class="goal-item_desc">
                   Giáo viên mầm non đã và đang giảng dạy, muốn tham gia hệ sinh
                   thái giáo viên tiếng anh toàn năng Happy Faces
-                </p>
+                </h3>
               </div>
               <div class="goal-item">
                 <img
@@ -275,7 +281,9 @@
                   alt="checkbox"
                   class="checkbox"
                 />
-                <p>Sinh viên năm 3, 4 ngành Sư phạm hoặc Ngôn ngữ Anh.</p>
+                <h3 class="goal-item_desc">
+                  Sinh viên năm 3, 4 ngành Sư phạm hoặc Ngôn ngữ Anh.
+                </h3>
               </div>
               <div class="goal-item">
                 <img
@@ -283,10 +291,10 @@
                   alt="checkbox"
                   class="checkbox"
                 />
-                <p>
+                <h3 class="goal-item_desc">
                   Người đã tốt nghiệp các ngành sư phạm/giáo dục có trình độ
                   tiếng Anh từ B2 trở lên.
-                </p>
+                </h3>
               </div>
               <div class="goal-item">
                 <img
@@ -294,10 +302,10 @@
                   alt="checkbox"
                   class="checkbox"
                 />
-                <p>
+                <h3 class="goal-item_desc">
                   Trung tâm Anh ngữ hoặc trường mầm non muốn chuẩn hóa đội ngũ
                   giáo viên.
-                </p>
+                </h3>
               </div>
               <div class="goal-item">
                 <img
@@ -305,15 +313,14 @@
                   alt="checkbox"
                   class="checkbox"
                 />
-                <p>
+                <h3 class="goal-item_desc">
                   Những người yêu thích trẻ nhỏ, định hướng theo nghề giáo dục
                   mầm non song ngữ.
-                </p>
+                </h3>
               </div>
             </div>
           </div>
         </div>
-        <button class="call-btn"><span>Tư vấn ngay </span></button>
       </section>
 
       <section class="schedule" id="schedule">
@@ -420,8 +427,10 @@
                   <span class="per-price">300k/</span
                   ><sub class="sub">người</sub>
                 </p>
-                <p>khi đăng kí nhóm</p>
-                <p class="discount-group">3 người</p>
+                <p>
+                  khi đăng kí nhóm <br />
+                  <span class="discount-group">3 người</span>
+                </p>
                 <img
                   src="./assets/badge.svg"
                   alt="discount_badge"
@@ -444,7 +453,7 @@
             </div>
           </div>
 
-          <form class="form-register">
+          <form class="form-register" id="form">
             <p class="form-heading">Dành riêng cho</p>
             <p class="form-heading_bold">
               Học viên tháng <span class="currentMonth"></span>
@@ -461,34 +470,36 @@
                   <label for="fullname">Họ và Tên</label>
                   <span class="required">*</span>
                 </div>
-                <input type="text" />
+                <input type="text" id="fullname" />
+                <p class="error-message error-message_fullname"></p>
               </div>
 
               <div class="input-field">
                 <div class="label">
-                  <label for="fullname">Số điện thoại</label>
+                  <label for="phoneNumber">Số điện thoại</label>
                   <span class="required">*</span>
                 </div>
-                <input type="text" />
+                <input type="text" id="phoneNumber" />
+                <p class="error-message error-message_phoneNumber"></p>
               </div>
 
               <div class="input-field">
                 <div class="label">
-                  <label for="fullname">Email</label>
-                  <span class="required">*</span>
+                  <label for="email">Email</label>
                 </div>
-                <input type="text" />
+                <input type="text" id="email" />
               </div>
 
               <div class="input-field">
                 <div class="label">
-                  <label for="fullname">Công việc hiện tại</label>
-                  <span class="required">*</span>
+                  <label for="job">Công việc hiện tại</label>
                 </div>
-                <input type="text" />
+                <input type="text" id="job" />
               </div>
 
-              <button class="register_btn"><span>Đăng ký</span></button>
+              <button type="submit" class="register_btn">
+                <span>Đăng ký</span>
+              </button>
             </div>
           </form>
         </div>
@@ -520,7 +531,7 @@
       </section>
 
       <section class="feedback">
-        <p class="feedback-title">Feedback Học viên</p>
+        <h2 class="feedback-title">Feedback Học viên</h2>
 
         <div class="feedback-content">
           <div class="feedback-item">
@@ -603,7 +614,7 @@
           />
         </div>
 
-        <button class="call-btn"><span>Tư vấn ngay </span></button>
+        <a href="#form" class="call-btn"><span>Đăng ký ngay </span></a>
       </section>
     </main>
 
@@ -654,7 +665,9 @@
             </div>
             <div class="address">
               <img src="./assets/email.svg" alt="email_icon" />
-              <p>hanoi@happyfaces.edu.vn</p>
+              <a href="mailto:hanoi@happyfaces.edu.vn"
+                >hanoi@happyfaces.edu.vn</a
+              >
             </div>
           </div>
 
@@ -672,7 +685,7 @@
             </div>
             <div class="address">
               <img src="./assets/email.svg" alt="email_icon" />
-              <p>hcm@happyfaces.edu.vn</p>
+              <a href="mailto:hcm@happyfaces.edu.vn">hcm@happyfaces.edu.vn</a>
             </div>
           </div>
         </div>
