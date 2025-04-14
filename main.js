@@ -106,7 +106,49 @@ form.addEventListener("submit", (e) => {
       top: formPosition,
       behavior: "smooth",
     });
+    return;
   }
+
+  const fullname = fullNameInput.value.trim();
+  const phoneNumber = phoneNumberInput.value.trim();
+  const email =
+    document.getElementById("email")?.value.trim() || "Không cung cấp";
+  const job = document.getElementById("job")?.value.trim() || "Không cung cấp";
+
+  const telegramBotToken = "7300843499:AAHK4qtisbvBHLeYu2jVoTpp9po4z51a7Uw";
+  const chatId = "-4600292827";
+
+  const message = `
+📥 *Đăng ký tư vấn mới từ Happy Face:*
+👤 Họ và Tên: ${fullname}
+📞 SĐT: ${phoneNumber}
+📧 Email: ${email}
+💼 Công việc: ${job}
+  `;
+
+  fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text: message,
+      parse_mode: "Markdown",
+    }),
+  })
+    .then((response) => {
+      if (response.ok) {
+        alert("Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ sớm.");
+        form.reset();
+      } else {
+        alert("Gửi thất bại. Vui lòng thử lại.");
+      }
+    })
+    .catch((error) => {
+      console.error("Lỗi khi gửi Telegram:", error);
+      alert("Đã xảy ra lỗi, vui lòng thử lại sau.");
+    });
 });
 
 fullNameInput.addEventListener("input", () => {
