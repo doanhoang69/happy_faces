@@ -17,6 +17,13 @@ const errorMessagePhoneNumber = document.querySelector(
 );
 const scrollToTopBtn = document.querySelector(".scroll-to-top");
 
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
 const now = new Date();
 currentMonth.textContent = now.getMonth() + 1;
 
@@ -175,12 +182,5 @@ document.querySelectorAll('a.call-btn[href="#form"]').forEach((link) => {
       top: formPosition,
       behavior: "smooth",
     });
-  });
-});
-
-scrollToTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
   });
 });
