@@ -10,6 +10,7 @@ body {
 }
 
 .navbar {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -318,6 +319,14 @@ body {
   gap: 20px;
 }
 
+.icon {
+  transition: all 0.25s ease;
+}
+
+.icon:hover {
+  transform: translateY(-3px);
+}
+
 .scroll-to-top {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -411,6 +420,10 @@ body {
   .teacher {
     display: none;
   }
+
+  .icon {
+    width: 40px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -472,6 +485,9 @@ body {
 }
 
 .program-card {
+  background-image: url("./assets/background_small.svg");
+  background-position: center center;
+  background-size: cover;
   border-radius: 30px;
   padding: 20px;
   text-align: center;
