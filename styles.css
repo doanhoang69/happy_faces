@@ -139,16 +139,14 @@ body {
   transition: all 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   padding: 10px;
 }
 
-.sidebar .nav-link_mobile {
+.nav-link_mobile {
   text-decoration: none;
-  background-color: #ccc;
   padding: 10px;
   text-align: left;
-  color: #000;
+  color: #263238;
 }
 
 .sidebar.show {
@@ -164,10 +162,21 @@ body {
 }
 
 .close_btn {
-  width: fit-content;
-  font-size: 16px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   border: none;
+  background-color: #e8e8e8;
+  margin-bottom: 20px;
+}
+
+.close_btn + .nav-link_mobile {
+  font-weight: 700;
+  color: #01045e;
 }
 
 .call-btn {
@@ -535,7 +544,7 @@ body {
 @media only screen and (max-width: 576px) {
   .program {
     gap: 33px;
-    padding: 100px 25px 0;
+    padding: 80px 25px 0;
   }
 
   .program-content {
@@ -661,7 +670,7 @@ body {
 
 @media only screen and (max-width: 576px) {
   .courses {
-    padding: 100px 30px 0;
+    padding: 80px 30px 0;
   }
 
   .course-goals {
@@ -767,7 +776,7 @@ body {
 
 @media only screen and (max-width: 576px) {
   .schedule {
-    padding: 100px 35px 0;
+    padding: 80px 35px 0;
   }
 
   .schedule-content {
@@ -793,6 +802,7 @@ body {
   }
 
   .schedule-item_desc {
+    align-items: start;
     gap: 10px;
   }
 }
@@ -876,7 +886,7 @@ body {
 
 @media only screen and (max-width: 576px) {
   .method {
-    padding: 100px 20px 0;
+    padding: 80px 20px 0;
     gap: 45px;
   }
 
@@ -950,11 +960,11 @@ body {
 }
 
 .discount-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 39px;
-  padding-top: 29px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+  gap: 40px;
+  padding-top: 30px;
 }
 
 .discount-item {
@@ -977,12 +987,19 @@ body {
   height: 236px;
 }
 
+.discount-item_last {
+  grid-column: span 2;
+  justify-self: center;
+}
+
 .discount-number {
   font-weight: 800;
   font-size: 64px;
   line-height: 120%;
   color: #ff2121;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .per-price {
@@ -997,7 +1014,7 @@ body {
 .sub {
   font-size: 20px;
   line-height: 120%;
-  vertical-align: bottom;
+  align-self: flex-end;
   color: #ff2121;
 }
 
@@ -1008,6 +1025,14 @@ body {
 }
 
 .discount-badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.discount-badge_small {
+  display: none;
   position: absolute;
   top: 0;
   left: 50%;
@@ -1171,7 +1196,7 @@ body {
   }
 
   .discount-left {
-    min-width: 700px;
+    max-width: 700px;
   }
 
   .discount-heading {
@@ -1227,7 +1252,7 @@ body {
 
 @media only screen and (max-width: 576px) {
   .discount {
-    padding: 100px 30px 0;
+    padding: 80px 20px 0;
   }
 
   .discount-content {
@@ -1235,7 +1260,12 @@ body {
     gap: 25px;
   }
 
+  .discount-left {
+    width: 100%;
+  }
+
   .discount-heading {
+    text-align: left;
     font-size: 18px;
   }
 
@@ -1244,22 +1274,57 @@ body {
   }
 
   .discount-duration {
+    padding-right: 0;
     font-size: 14px;
   }
 
   .discount-wrapper {
-    padding-left: 43px;
-    padding-right: 43px;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 20px 15px;
   }
 
   .discount-item {
+    width: auto;
+    max-height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 14px;
+    padding: 20px 5px 10px;
+  }
+
+  .discount-badge {
+    display: none;
+  }
+
+  .discount-badge_small {
+    display: block;
+  }
+
+  .discount-item_last {
+    max-width: 50%;
   }
 
   .discount-number {
-    font-size: 52px;
+    font-size: 36px;
+  }
+
+  .per-price {
+    font-size: 24px;
+  }
+
+  .sub {
+    font-size: 16px;
+  }
+
+  .text-note {
+    font-size: 12px;
+  }
+
+  .discount-group {
+    font-size: 15px;
+    font-weight: 700;
   }
 
   .form-register {
@@ -1336,7 +1401,7 @@ body {
 
 @media only screen and (max-width: 576px) {
   .certificate {
-    padding: 100px 30px 30px;
+    padding: 80px 30px 30px;
     gap: 20px;
   }
 
