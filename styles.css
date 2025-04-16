@@ -1916,7 +1916,7 @@ footer {
   width: 100%;
   z-index: 20;
   background-color: whitesmoke;
-  padding: 10px 50px;
+  padding: 15px 50px;
   display: none;
 }
 
@@ -1928,5 +1928,6 @@ footer {
   .footer-tabs {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
