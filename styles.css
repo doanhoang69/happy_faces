@@ -1888,7 +1888,7 @@ footer {
   footer {
     flex-direction: column;
     gap: 30px;
-    padding: 17px;
+    padding: 17px 17px 72px;
   }
 
   .footer-title {
@@ -1940,6 +1940,12 @@ footer {
 }
 
 .footer-tabs {
+  border-top: 2px solid lightgray;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: whitesmoke;
   padding: 10px 50px;
   display: none;
 }
