@@ -342,6 +342,24 @@ body {
     padding: 10px 0;
     font-size: 14px;
   }
+
+  .call-btn:hover span {
+    padding-right: 0;
+  }
+
+  .call-btn:hover span:after {
+    opacity: 0;
+    right: -20px;
+  }
+
+  .call-btn_main:hover span {
+    padding-right: 0;
+  }
+
+  .call-btn_main:hover span:after {
+    opacity: 0;
+    right: -30px;
+  }
 }
 
 .intro {
@@ -1109,6 +1127,7 @@ body {
   padding: 25px 18px 27px;
   width: 253px;
   height: 236px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .discount-item_last {
@@ -1257,6 +1276,12 @@ body {
 .input-field input:focus {
   border: 1px solid #fed843;
   outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .required {
@@ -1921,7 +1946,6 @@ footer {
 
 @media only screen and (max-width: 576px) {
   .footer-tabs {
-    display: flex;
     display: flex;
     justify-content: space-between;
   }
