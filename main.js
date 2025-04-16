@@ -1,7 +1,11 @@
 const mobile_btn = document.querySelector(".mobile_btn");
 const sidebar = document.querySelector(".sidebar");
+const popup = document.querySelector(".pop-up_container");
 const navLinks = document.querySelectorAll(".nav-link_mobile");
 const close_btn = document.querySelector(".close_btn");
+const registerText = document.querySelector(".register_btn_text");
+const loader = document.querySelector(".loader");
+const closeModalBtn = document.querySelector(".close_modal_btn");
 const currentMonth = document.querySelector(".currentMonth");
 const day = document.querySelector(".day");
 const hour = document.querySelector(".hour");
@@ -57,6 +61,11 @@ mobile_btn.addEventListener("click", (e) => {
 
 close_btn.addEventListener("click", () => {
   sidebar.classList.remove("show");
+});
+
+closeModalBtn.addEventListener("click", () => {
+  popup.classList.remove("show");
+  document.body.style.overflow = "";
 });
 
 navLinks.forEach((navLink) => {
@@ -116,6 +125,9 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
+  loader.classList.add("show");
+  registerText.style.display = "none";
+
   const fullname = fullNameInput.value.trim();
   const phoneNumber = phoneNumberInput.value.trim();
   const email =
@@ -145,14 +157,19 @@ form.addEventListener("submit", (e) => {
     }),
   })
     .then((response) => {
+      document.body.style.overflow = "hidden";
+      loader.classList.remove("show");
+      registerText.style.display = "inline";
       if (response.ok) {
-        alert("Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ sớm.");
         form.reset();
+        popup.classList.add("show");
       } else {
         alert("Gửi thất bại. Vui lòng thử lại.");
       }
     })
     .catch((error) => {
+      loader.classList.remove("show");
+      registerText.style.display = "inline";
       console.error("Lỗi khi gửi Telegram:", error);
       alert("Đã xảy ra lỗi, vui lòng thử lại sau.");
     });
