@@ -411,26 +411,10 @@ body {
   display: none;
 }
 
-.social-icons {
+.scroll-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 200;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.icon {
-  transition: all 0.25s ease;
-}
-
-.icon:hover {
-  transform: translateY(-3px);
-}
-
-.scroll-to-top {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.5);
   width: 40px;
@@ -440,8 +424,9 @@ body {
   justify-content: center;
   align-items: center;
   transition: 0.25s all ease;
-  z-index: 10;
+  z-index: 11;
   display: none;
+  cursor: pointer;
 }
 
 .scroll-to-top:hover {
@@ -449,10 +434,7 @@ body {
 }
 
 .scroll-to-top.show {
-  cursor: pointer;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .intro-img-wrapper .teacher {
@@ -524,14 +506,6 @@ body {
   .teacher {
     display: none;
   }
-
-  .social-icons a {
-    display: none;
-  }
-
-  .icon {
-    width: 40px;
-  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -570,14 +544,6 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-  }
-
-  .teacher {
-    display: none;
-  }
-
-  .social-icons {
-    bottom: 70px;
   }
 }
 
@@ -1888,7 +1854,7 @@ footer {
   footer {
     flex-direction: column;
     gap: 30px;
-    padding: 17px;
+    padding: 17px 17px 72px;
   }
 
   .footer-title {
@@ -1940,6 +1906,12 @@ footer {
 }
 
 .footer-tabs {
+  border-top: 2px solid lightgray;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: whitesmoke;
   padding: 10px 50px;
   display: none;
 }
