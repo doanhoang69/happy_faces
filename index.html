@@ -12,6 +12,22 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <!-- POPUP -->
+    <div class="pop-up_container">
+      <div class="pop-up">
+        <div class="close_modal_btn">
+          <img src="./assets/xmark.svg" alt="close_btn" width="18" />
+        </div>
+        <img src="./assets/tick.svg" alt="success_tick" width="40" />
+
+        <h2 class="pop-up_title">Đăng ký thành công!</h2>
+        <h3 class="pop-up_desc">
+          Thông tin của bạn đã được gửi đi. Chúng tôi sẽ liên hệ với bạn trong
+          thời gian sớm nhất!
+        </h3>
+      </div>
+    </div>
+
     <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="close_btn">
@@ -125,7 +141,7 @@
       </section>
 
       <section class="program" id="program">
-        <p class="section-title">chương trình Happy Faces</p>
+        <h2 class="section-title">chương trình Happy Faces</h2>
 
         <div class="program-content">
           <div class="program-card">
@@ -216,7 +232,7 @@
       </section>
 
       <section class="courses" id="course">
-        <p class="section-title">Tổng quan khóa học</p>
+        <h2 class="section-title">Tổng quan khóa học</h2>
 
         <div class="course-goals">
           <div class="goals-col">
@@ -343,11 +359,11 @@
       </section>
 
       <section class="schedule" id="schedule">
-        <p class="section-title">Nội dung & Lịch học chi tiết</p>
+        <h2 class="section-title">Nội dung & Lịch học chi tiết</h2>
 
         <div class="schedule-content">
           <div class="schedule-item">
-            <p class="schedule-item_title">Module học</p>
+            <h2 class="schedule-item_title">Module học</h2>
             <ul class="schedule-item_desc">
               <li>Phương pháp giảng dạy tiếng Anh trẻ em.</li>
               <li>Ứng dụng học liệu số – bộ sách Happy Faces.</li>
@@ -379,11 +395,13 @@
       </section>
 
       <section class="method">
-        <p class="section-title">Phương pháp đào tạo</p>
+        <h2 class="section-title">Phương pháp đào tạo</h2>
 
         <div class="method-content">
           <div class="method-item">
-            <p>Thi cấp chứng chỉ – đánh giá năng lực</p>
+            <h3 class="method-item_desc">
+              Thi cấp chứng chỉ – đánh giá năng lực
+            </h3>
             <img
               src="./assets/method1.svg"
               alt="certificate"
@@ -392,7 +410,7 @@
           </div>
 
           <div class="method-item">
-            <p>Case study thực tế – Demo lớp học.</p>
+            <h3 class="method-item_desc">Case study thực tế – Demo lớp học.</h3>
             <img
               src="./assets/method2.svg"
               alt="case_study"
@@ -401,7 +419,9 @@
           </div>
 
           <div class="method-item">
-            <p>Tương tác trực tiếp với giảng viên giàu kinh nghiệm.</p>
+            <h3 class="method-item_desc">
+              Tương tác trực tiếp với giảng viên giàu kinh nghiệm.
+            </h3>
             <img
               src="./assets/method3.svg"
               alt="intereact"
@@ -410,7 +430,7 @@
           </div>
 
           <div class="method-item">
-            <p>Hỗ trợ tài liệu học, học liệu số.</p>
+            <h3 class="method-item_desc">Hỗ trợ tài liệu học, học liệu số.</h3>
             <img
               src="./assets/method4.svg"
               alt="meterial"
@@ -421,13 +441,13 @@
       </section>
 
       <section class="discount" id="discount">
-        <p class="section-title">Học phí & Ưu đãi</p>
+        <h2 class="section-title">Học phí & Ưu đãi</h2>
 
         <div class="discount-content">
           <div class="discount-left">
-            <p class="discount-heading">Chỉ còn giá</p>
-            <p class="discount-price">6.175.000</p>
-            <p class="discount-duration">đăng kí trước ngày 10/02/2025</p>
+            <h2 class="discount-heading">Chỉ còn giá</h2>
+            <h2 class="discount-price">6.175.000</h2>
+            <h2 class="discount-duration">đăng kí trước ngày 10/02/2025</h2>
             <div class="discount-wrapper">
               <div class="discount-item">
                 <p>Giảm</p>
@@ -488,10 +508,10 @@
           </div>
 
           <form class="form-register" id="form">
-            <p class="form-heading">Dành riêng cho</p>
-            <p class="form-heading_bold">
+            <h2 class="form-heading">Dành riêng cho</h2>
+            <h2 class="form-heading_bold">
               Học viên tháng <span class="currentMonth"></span>
-            </p>
+            </h2>
             <div class="countdown">
               <p class="day"></p>
               <p class="hour"></p>
@@ -532,7 +552,8 @@
               </div>
 
               <button type="submit" class="register_btn">
-                <span>Đăng ký</span>
+                <span class="register_btn_text">Đăng ký</span>
+                <div class="loader"></div>
               </button>
             </div>
           </form>
@@ -540,26 +561,28 @@
       </section>
 
       <section class="certificate" id="certificate">
-        <p class="section-title">Chứng chỉ và cơ hội phát triển</p>
+        <h2 class="section-title">Chứng chỉ và cơ hội phát triển</h2>
 
         <div class="certificate-content">
           <div class="certificate-item">
             <img src="./assets/happyfaces.svg" alt="happyfaces_teacher" />
-            <p>
+            <h3 class="cert-item_desc">
               Chứng chỉ “Giáo viên toàn năng Happy Faces” – giá trị toàn quốc.
-            </p>
+            </h3>
           </div>
 
           <div class="certificate-item">
             <img src="./assets/opportunity.svg" alt="opportunity" />
-            <p>
+            <h3 class="cert-item_desc">
               Cơ hội trở thành giảng viên Happy Faces, hợp tác lâu dài với SCC.
-            </p>
+            </h3>
           </div>
 
           <div class="certificate-item">
             <img src="./assets/cert.svg" alt="certificate" />
-            <p>Được ưu tiên nhận học viên từ hệ sinh thái Happy Faces.</p>
+            <h3 class="cert-item_desc">
+              Được ưu tiên nhận học viên từ hệ sinh thái Happy Faces.
+            </h3>
           </div>
         </div>
       </section>
@@ -571,7 +594,7 @@
           <div class="feedback-item">
             <div class="feedback-item_intro">
               <img src="./assets/woman.svg" alt="woman" class="user_avartar" />
-              <p class="user_name">Đặng Văn Hoàng</p>
+              <h2 class="user_name">Đặng Văn Hoàng</h2>
               <div class="rating">
                 <img src="./assets/star.svg" alt="star" />
                 <img src="./assets/star.svg" alt="star" />
@@ -581,16 +604,16 @@
               </div>
             </div>
 
-            <p class="user_feedback">
+            <h3 class="user_feedback">
               Khoá học mang đến nhiều cơ hội việc làm mở rộng cho mình, nâng cao
               kiến thức bla bla
-            </p>
+            </h3>
           </div>
 
           <div class="feedback-item">
             <div class="feedback-item_intro">
               <img src="./assets/man.svg" alt="woman" class="user_avartar" />
-              <p class="user_name">Ngọc Tiến</p>
+              <h2 class="user_name">Ngọc Tiến</h2>
               <div class="rating">
                 <img src="./assets/star.svg" alt="star" />
                 <img src="./assets/star.svg" alt="star" />
@@ -599,17 +622,17 @@
               </div>
             </div>
 
-            <p class="user_feedback">
+            <h3 class="user_feedback">
               Khoá học mang đến nhiều cơ hội việc làm mở rộng cho mình, nâng cao
               kiến thức bla bla , KHoá học mang đến nhiều cơ hội việc làm mở
               rộng cho mình
-            </p>
+            </h3>
           </div>
 
           <div class="feedback-item">
             <div class="feedback-item_intro">
               <img src="./assets/old.svg" alt="woman" class="user_avartar" />
-              <p class="user_name">Vũ Thị Thảo</p>
+              <h2 class="user_name">Vũ Thị Thảo</h2>
               <div class="rating">
                 <img src="./assets/star.svg" alt="star" />
                 <img src="./assets/star.svg" alt="star" />
@@ -618,10 +641,10 @@
               </div>
             </div>
 
-            <p class="user_feedback">
+            <h3 class="user_feedback">
               Khoá học mang đến nhiều cơ hội việc làm mở rộng cho mình, nâng cao
               kiến thức bla bla
-            </p>
+            </h3>
           </div>
         </div>
 
@@ -662,7 +685,7 @@
           alt="happyfaces_logo"
           class="happyfaces-logo"
         />
-        <p class="slogan">HỆ THỐNG ĐÀO TẠO GIÁO DỤC MẦM NON TOÀN QUỐC</p>
+        <h2 class="slogan">HỆ THỐNG ĐÀO TẠO GIÁO DỤC MẦM NON TOÀN QUỐC</h2>
         <div class="link-wrapper">
           <div class="link-wrapper_item">
             <img src="./assets/Facebook.svg" alt="facebook_logo" />
@@ -696,18 +719,20 @@
       </div>
 
       <div class="social-contact">
-        <p class="footer-title">Liên hệ</p>
+        <h2 class="footer-title">Liên hệ</h2>
 
         <div class="branch-wrapper">
           <div class="branch-item">
-            <p class="branch-item_heading">Chi Nhánh Hà Nội</p>
+            <h2 class="branch-item_heading">Chi Nhánh Hà Nội</h2>
             <div class="address">
               <img src="./assets/home.svg" alt="home_icon" />
-              <p>26 Đường Láng, Thịnh Quang, Đống Đa, Hà Nội</p>
+              <h3 class="address_text">
+                26 Đường Láng, Thịnh Quang, Đống Đa, Hà Nội
+              </h3>
             </div>
             <div class="address">
               <img src="./assets/telephone.svg" alt="telephone_icon" />
-              <p>0903 276 959</p>
+              <h3 class="address_text">0903 276 959</h3>
             </div>
             <div class="address">
               <img src="./assets/email.svg" alt="email_icon" />
@@ -718,16 +743,16 @@
           </div>
 
           <div class="branch-item">
-            <p class="branch-item_heading">Chi Nhánh TP. Hồ Chí Minh</p>
+            <h2 class="branch-item_heading">Chi Nhánh TP. Hồ Chí Minh</h2>
             <div class="address">
               <img src="./assets/home.svg" alt="home_icon" />
-              <p>
+              <h3 class="address_text">
                 159Ter, Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, TP. Hồ Chí Minh
-              </p>
+              </h3>
             </div>
             <div class="address">
               <img src="./assets/telephone.svg" alt="telephone_icon" />
-              <p>0903 276 959</p>
+              <h3 class="address_text">0903 276 959</h3>
             </div>
             <div class="address">
               <img src="./assets/email.svg" alt="email_icon" />
@@ -738,10 +763,24 @@
       </div>
 
       <div class="social-company">
-        <p class="footer-title">Một sản phẩm của</p>
+        <h2 class="footer-title">Một sản phẩm của</h2>
         <img src="./assets/ip-vision.svg" alt="IP_Vision_logo" width="142" />
       </div>
     </footer>
+
+    <div class="footer-tabs">
+      <a href="mailto:hanoi@happyfaces.edu.vn"
+        ><img src="./assets/envelope.svg" alt="email" width="30"
+      /></a>
+      <a
+        href="https://www.facebook.com/happyfacestienganhmaugiao/"
+        target="_blank"
+        ><img src="./assets/facebook-messenger.svg" alt="messenger" width="30"
+      /></a>
+      <a href="tel:0903276959"
+        ><img src="./assets/phone-flip-solid.svg" alt="phone" width="30"
+      /></a>
+    </div>
   </body>
   <script src="./main.js"></script>
 </html>
