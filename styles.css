@@ -1764,7 +1764,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 0 50px;
+  padding: 0 120px;
 }
 
 .slogan {
@@ -1939,6 +1939,15 @@ footer {
     font-size: 12px;
     font-weight: 600;
     line-height: 1.5;
+  }
+
+  .branch-item_heading {
+    font-size: 16px;
+  }
+
+  .address_text,
+  .address_text a {
+    font-size: 13px;
   }
 
   .social-link_wrapper {
