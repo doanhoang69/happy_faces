@@ -66,6 +66,7 @@ close_btn.addEventListener("click", () => {
 closeModalBtn.addEventListener("click", () => {
   popup.classList.remove("show");
   document.body.style.overflow = "";
+  scrollToTopBtn.classList.add("show");
 });
 
 navLinks.forEach((navLink) => {
@@ -163,6 +164,11 @@ form.addEventListener("submit", (e) => {
       if (response.ok) {
         form.reset();
         popup.classList.add("show");
+        scrollToTopBtn.classList.remove("show");
+        const iframe = document.createElement("iframe");
+        iframe.src = "happyfaces.edu.vn/thankyou";
+        iframe.style.display = "none";
+        document.body.appendChild(iframe);
       } else {
         alert("Gửi thất bại. Vui lòng thử lại.");
       }

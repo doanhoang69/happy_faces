@@ -373,7 +373,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 90px;
+  gap: 50px;
 }
 
 .course-text {
@@ -390,11 +390,10 @@ body {
   font-weight: 700;
   line-height: 120%;
   color: rgba(0, 43, 107, 1);
-  margin-bottom: 20px;
 }
 
 .intro-text-desc {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -567,10 +566,6 @@ body {
 }
 
 .program-card {
-  background-image: url("./assets/background_small.svg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
   border-radius: 30px;
   padding: 20px;
   text-align: center;
@@ -591,8 +586,6 @@ body {
 
 .program-card_icon img {
   height: 100%;
-  object-fit: cover;
-  background: none;
 }
 
 .program-card_title {
@@ -978,6 +971,10 @@ body {
     gap: 20px;
     height: auto;
     max-height: 200px;
+  }
+
+  .method-item.method-item3 {
+    order: 4;
   }
 
   .method-item_desc {
@@ -1600,7 +1597,7 @@ input[type="number"]::-webkit-inner-spin-button {
   flex-direction: column;
   gap: 20px;
   border-radius: 20px;
-  padding: 27px 20px 10px;
+  padding: 25px;
 }
 
 .feedback-item_intro {
@@ -1614,8 +1611,8 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  text-align: center;
   color: rgba(31, 28, 20, 0.7);
+  text-align: justify;
 }
 
 .user_avartar {
@@ -1645,24 +1642,12 @@ input[type="number"]::-webkit-inner-spin-button {
   gap: 30px;
 }
 
-.img1,
-.img4 {
-  grid-row: 1 / 3;
-}
-
-.img2 {
-  grid-column-start: 2;
-}
-
-.img3 {
-  grid-row-start: 2;
-}
-
 .feedback-image {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 15%;
   border-radius: 5px;
 }
 
@@ -1726,6 +1711,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .feedback-content .feedback-item:nth-child(even) {
     align-self: flex-end;
+  }
+
+  .feedback-content .feedback-item_last {
+    display: none;
   }
 
   .user_avartar {
@@ -1916,13 +1905,13 @@ footer {
   width: 100%;
   z-index: 20;
   background-color: whitesmoke;
-  padding: 15px 50px;
+  padding: 15px 30px;
   display: none;
 }
 
 @media only screen and (max-width: 576px) {
   footer {
-    padding-bottom: 72px;
+    padding-bottom: 85px;
   }
 
   .footer-tabs {
