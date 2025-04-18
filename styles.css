@@ -1904,6 +1904,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -1958,5 +1960,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
