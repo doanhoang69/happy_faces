@@ -442,8 +442,7 @@ body {
 
 .intro-img-wrapper .teacher1 {
   position: absolute;
-  top: 4px;
-  right: 298px;
+  right: 270px;
 }
 
 .intro-img-wrapper .teacher2 {
@@ -454,7 +453,7 @@ body {
 
 .intro-img-wrapper .teacher3 {
   position: absolute;
-  top: 255px;
+  top: 200px;
   right: 474px;
 }
 
